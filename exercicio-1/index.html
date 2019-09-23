@@ -9,11 +9,12 @@
         body {            
             margin:0px;
             padding:0px;
+            font-family: "MuseoSans", Arial, sans-serif;
         }
         .container {
             margin:0px;
             padding:0px;
-            background-color: red;
+            background-color: white;
         }
         ul {
             margin:0px;
@@ -24,8 +25,7 @@
             display: inline;
         }
         #menu-superior {
-            background-color: #009785;
-            font-family: "MuseoSans", Arial, sans-serif;
+            background-color: #009785;            
             color: white;
             height:30px;
             width: 100%;
@@ -33,8 +33,13 @@
             line-height: 30px;
             font-size:13px;
         }
-        a {
-            color: white;
+        #menu-superior a {
+            color:white;
+        }
+        #menu-inferior a {
+            color:grey;
+        }
+        a {            
             text-decoration: none;
         }
         #menu-sup-esquerda {
@@ -48,13 +53,38 @@
             padding-right: 10px;
             padding-left: 10px; 
         }
-        #menu-sup-direita li:last-child {
+        #menu-sup-direita li:last-child, 
+        #menu-inferior li:last-child {
             border-right: none;
         }
         #menu-sup-esquerda li {
             padding: 0px 8px 0px 8px;
         }
-    </style>   
+        #menu-inferior{
+            background-color:white;
+            text-align: center; 
+            font-size:12px;
+            font-weight: bold;            
+            margin: 10px 0px;
+        }         
+        #menu-inferior li {
+            border-right: 1px solid grey;           
+            width:24%;
+            display: inline-block;
+        }
+        #busca-logo {
+            width: 100%;
+            height:100px;
+        }   
+        #logo {
+            width:20%;
+            height: 100%;
+            background-color: red;
+        }
+        #logo img {            
+            margin: 10px auto;
+        }
+    </style> 
 </head>
 <body>
     <div class="container">
@@ -78,8 +108,20 @@
                     </ul>
                 </nav>
             </div>
-            <div id="busca-logo"></div>
-            <nav id="menu-inferior"></nav>
+            <div id="busca-logo">
+                <div id="logo">
+                    <img src="senai_logo.png" />                    
+                </div>
+                <div id="busca"></div>
+            </div>
+            <nav id="menu-inferior">
+                <ul>
+                    <li><a href="#">PARA VOCÊ</a></li>
+                    <li><a href="#">PARA INDÚSTRIA E EMPRESAS</a></li>
+                    <li><a href="#">SOBRE O SENAI</a></li>
+                    <li><a href="#">TRANSPARÊNCIA</a></li>
+                </ul>
+            </nav>
         </header>
     </div>    
 </body>
